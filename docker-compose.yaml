@@ -92,7 +92,7 @@ services:
     volumes:
       - "./config:/home/user/.arbitrum"
     command: --conf.file /home/user/.arbitrum/nodeConfig.json
-    user: "${UID}"
+    user: "root"
 
   das-server:
     image: offchainlabs/nitro-node:v3.2.1-d81324d
