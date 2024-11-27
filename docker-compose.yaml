@@ -88,7 +88,7 @@ services:
   nitro:
     image: offchainlabs/nitro-node:v3.2.1-d81324d
     ports:
-      - "127.0.0.1:8449:8449"
+      - "0.0.0.0:8449:8449"
     volumes:
       - "./config:/home/user/.arbitrum"
     command: --conf.file /home/user/.arbitrum/nodeConfig.json
