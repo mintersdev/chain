@@ -74,15 +74,6 @@ services:
       file: ./docker-compose/services/stats.yml
       service: stats
 
-  proxy:
-    depends_on:
-      - backend
-      - frontend
-      - stats
-    extends:
-      file: ./docker-compose/services/nginx.yml
-      service: proxy
-
   nitro:
     image: offchainlabs/nitro-node:v3.2.1-d81324d
     ports:
