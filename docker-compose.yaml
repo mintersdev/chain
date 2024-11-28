@@ -82,7 +82,7 @@ services:
     ports:
       - "8051:8050"
     environment:
-      STATS__BLOCKSCOUT_API_URL: "https://blockscout.chain.siusia.com"
+      STATS__BLOCKSCOUT_API_URL: "https://backend.chain.siusia.com"
 
   nitro:
     image: offchainlabs/nitro-node:v3.2.1-d81324d
