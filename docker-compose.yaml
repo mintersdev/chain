@@ -37,6 +37,8 @@ services:
     extends:
       file: ./docker-compose/services/visualizer.yml
       service: visualizer
+    ports:
+      - "8050:8050"
 
   sig-provider:
     extends:
@@ -77,6 +79,8 @@ services:
     extends:
       file: ./docker-compose/services/stats.yml
       service: stats
+    ports:
+      - "8050:8050"
 
   nitro:
     image: offchainlabs/nitro-node:v3.2.1-d81324d
