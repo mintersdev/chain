@@ -61,8 +61,7 @@ services:
 
   stats-db:
     depends_on:
-      stats-db-init:
-        condition: service_completed_successfully
+      - stats-db-init
     extends:
       file: ./docker-compose/services/stats.yml
       service: stats-db
