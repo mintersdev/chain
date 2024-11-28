@@ -30,6 +30,8 @@ services:
         ETHEREUM_JSONRPC_HTTP_URL: http://nitro:8449/
         ETHEREUM_JSONRPC_TRACE_URL: http://nitro:8449/
         INDEXER_DISABLE_PENDING_TRANSACTIONS_FETCHER: "true"
+    ports:
+      - "4000:4000"
 
   visualizer:
     extends:
@@ -52,6 +54,8 @@ services:
       NEXT_PUBLIC_NETWORK_SHORT_NAME: "Arbitrum Local"
       NEXT_PUBLIC_AD_BANNER_PROVIDER: "none"
       NEXT_PUBLIC_NETWORK_RPC_URL: http://nitro:8449/
+    ports:
+      - "3000:3000"
 
 
   stats-db-init:
