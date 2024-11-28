@@ -12,8 +12,7 @@ services:
 
   db:
     depends_on:
-      db-init:
-        condition: service_completed_successfully
+      - db-init
     extends:
       file: ./docker-compose/services/db.yml
       service: db
